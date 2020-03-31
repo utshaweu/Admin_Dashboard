@@ -43,7 +43,7 @@
           <!-- Sidebar Part End-->
 
           <!-- Topnav Part Start-->
-          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top top-navbar">
             <div class="row align-items-center">
               <div class="col-md-4">
                 <h4 class="text-uppercase nav-title">Dashboard</h4>
@@ -60,7 +60,7 @@
                 <ul class="navbar-nav">
                   <li class="nav-item icon-parent"><a href="#" class="nav-link mr icon-bullet"><i class="fas fa-comments fa-lg"></i></a></li>
                   <li class="nav-item icon-parent"><a href="#" class="nav-link mr icon-bullet"><i class="fas fa-bell fa-lg"></i></a></li>
-                  <li class="nav-item ml-md-auto"><a href="#" class="nav-link mr"><i class="fas fa-sign-out-alt fa-lg"></i></a></li>
+                  <li class="nav-item ml-md-auto"><a href="#" class="nav-link mr" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt fa-lg"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -71,6 +71,338 @@
     </div>
  </nav>
  <!-- Navbar Part End-->
+
+ <!-- Modal Part Start-->
+ <div class="modal fade" id="sign-out">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Want to leave?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          Press logout to leave
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-dismiss="modal">Stay here</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+        </div>
+      </div>
+    </div>
+ </div>
+ <!-- Modal Part End-->
+
+ <!-- Card Part Start-->
+ <section>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+          <div class="row pt-md-5 mt-md-3 mb-5">
+
+            <div class="col-xl-3 col-sm-6 p-2">
+                <div class="card card-common">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <i class="fas fa-shopping-cart one"></i>
+                      <div class="text-right">
+                        <h5>Sales</h5>
+                        <h3>$135,000</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <i class="fas fa-sync mr-3"></i>
+                    <span>Updated Now</span>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-money-bill-alt two"></i>
+                    <div class="text-right">
+                      <h5>Expenses</h5>
+                      <h3>$39,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <i class="fas fa-sync mr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-users three"></i>
+                    <div class="text-right">
+                      <h5>Users</h5>
+                      <h3>15,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <i class="fas fa-sync mr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-sm-6 p-2">
+              <div class="card card-common">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <i class="fas fa-chart-line four"></i>
+                    <div class="text-right">
+                      <h5>Visitors</h5>
+                      <h3>45,000</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <i class="fas fa-sync mr-3"></i>
+                  <span>Updated Now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- Card Part End-->
+
+ <!-- Table Part Start-->
+ <section>
+   <div class="container-fluid">
+     <div class="row mb-5">
+        <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row">
+              <div class="col-xl-6 col-12 mb-4">
+                <div class="table-common">
+                  <h3 class="text-center mb-3">Staff Salary</h3>
+                <table class="table text-center">
+                    <thead>
+                      <tr>
+                        <th class="table-head-left">#</th>
+                        <th>Name</th>
+                        <th>Salary</th>
+                        <th>Date</th>
+                        <th class="table-head-right">Contact</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="table-head-hover">1</th>
+                        <td>Sajib</td>
+                        <td>$1000</td>
+                        <td>25/03/2020</td>
+                        <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      </tr>
+                      <tr>
+                        <th class="table-head-hover">2</th>
+                        <td>Hemel</td>
+                        <td>$1000</td>
+                        <td>25/03/2020</td>
+                        <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      </tr>
+                      <tr>
+                        <th class="table-head-hover">3</th>
+                        <td>Nayan</td>
+                        <td>$1000</td>
+                        <td>25/03/2020</td>
+                        <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      </tr>
+                      <tr>
+                        <th class="table-head-hover">4</th>
+                        <td>Jamil</td>
+                        <td>$1000</td>
+                        <td>25/03/2020</td>
+                        <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      </tr>
+                      <tr>
+                        <th class="table-head-hover">5</th>
+                        <td>Hamza</td>
+                        <td>$1000</td>
+                        <td>25/03/2020</td>
+                        <td><button type="button" class="btn btn-info btn-sm">Message</button></td>
+                      </tr>
+                    </tbody>
+                </table>
+                <!-- Pagination Part Start-->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>&laquo;</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>&raquo;</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- Pagination Part End-->
+                </div>
+              </div>
+              <div class="col-xl-6 col-12">
+                <div class="table-common">
+                  <h3 class="text-center mb-3">Recent Payments</h3>
+                <table class="table text-center">
+                  <thead>
+                    <tr>
+                      <th class="table-head-left">#</th>
+                      <th>Name</th>
+                      <th>Price</th>
+                      <th>Date</th>
+                      <th class="table-head-right">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th class="table-head-hover">1</th>
+                      <td>Jeba</td>
+                      <td>$1000</td>
+                      <td>25/03/2020</td>
+                      <td><span class="badge badge-success w-75">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <th class="table-head-hover">2</th>
+                      <td>Halima</td>
+                      <td>$1000</td>
+                      <td>25/03/2020</td>
+                      <td><span class="badge badge-success w-75">Approved</span></td>
+                    </tr>
+                    <tr>
+                      <th class="table-head-hover">3</th>
+                      <td>Marzia</td>
+                      <td>$1000</td>
+                      <td>25/03/2020</td>
+                      <td><span class="badge badge-danger w-75">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <th class="table-head-hover">4</th>
+                      <td>Sonia</td>
+                      <td>$1000</td>
+                      <td>25/03/2020</td>
+                      <td><span class="badge badge-danger w-75">Pending</span></td>
+                    </tr>
+                    <tr>
+                      <th class="table-head-hover">5</th>
+                      <td>Risha</td>
+                      <td>$1000</td>
+                      <td>25/03/2020</td>
+                      <td><span class="badge badge-success w-75">Approved</span></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+                <!-- Pagination Part Start-->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                        1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                        <span>Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- Pagination Part End-->
+                </div>
+              </div>
+            </div>
+        </div>
+     </div>
+   </div>
+ </section>
+ <!-- Table Part End-->
+
+ <!-- Progress/Task List Start-->
+ <section>
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+        <div class="row mb-4">
+          <div class="col-xl-6 col-12">
+            <div class="p-4 progressBar">
+              <h4 class="mb-5">Conversion Rates</h4>
+              <h6>Google Chrome</h6>
+              <div class="progress mb-3" style="height: 12px;">
+                <div class="progress-bar font-weight-bold bg-warning" style="width: 91%;">
+                  91%
+                </div>
+              </div>
+              <h6>Mozila Firefox</h6>
+              <div class="progress mb-3" style="height: 12px;">
+                <div class="progress-bar font-weight-bold bg-success" style="width: 82%;">
+                  82%
+                </div>
+              </div>
+              <h6>Safari</h6>
+              <div class="progress mb-3" style="height: 12px;">
+                <div class="progress-bar font-weight-bold bg-danger" style="width: 67%;">
+                  67%
+                </div>
+              </div>
+              <h6>IE</h6>
+              <div class="progress mb-3" style="height: 12px;">
+                <div class="progress-bar font-weight-bold bg-info" style="width: 12%;">
+                  12%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-12">
+
+          </div>
+        </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- Progress/Task List Part End-->
 
 
 

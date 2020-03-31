@@ -28,7 +28,7 @@ body{
   border-right: 1px solid #0e1726;
 }
 .button-border{
-  border-bottom: 1px groove #0e1726;
+  border-bottom: 1px solid #0e1726;
   letter-spacing: 1px;
   font-weight: 600;
 }
@@ -46,7 +46,7 @@ body{
   color: #506690;
   transition: all linear .3s;
   font-weight: 600;
-  padding: 15px;
+  padding: 12px;
 }
 .nav-item:hover i {
   color: #e0e6ed;
@@ -75,9 +75,10 @@ body{
   transform: translateY(-1px);
 }
 .bg-dark{
-  background-color: transparent!important;
+  background-color: #060818!important;
   border-bottom: 1px solid #0e1726;
-  margin-top: 8px;
+  padding-top: 15px;
+  padding-bottom: 9px;
 }
 .nav-title{
   color: #506690;
@@ -139,6 +140,288 @@ body{
   background-color: #3b3f5c;
   border-radius: 50%;
 }
+.modal-content{
+  background-color: #060818;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12), 0 3px 5px -1px rgba(0,0,0,.2);
+  border-radius: 6px;
+  border: 1px solid #0e1726;
+  color: #e0e6ed;
+}
+.modal-header{
+  border-bottom: 1px solid #0e1726;
+}
+.modal-footer{
+  border-top: 1px solid #0e1726;
+}
+.close:not(:disabled):not(.disabled):hover {
+  color: #506690;
+  opacity: 1;
+}
+.close{
+  text-shadow: none;
+  color: #e0e6ed;
+}
+.modal-title{
+  color: #e0e6ed;
+}
+.modal-footer .btn-success {
+  color: #e0e6ed;
+  background-color: transparent;
+  border-color: #0e1726;
+  transition: all linear .3s;
+}
+.modal-footer .btn-success:hover {
+  color: #e0e6ed;
+  background-color: #e2a03f;
+  border-color: #e2a03f;
+}
+.modal-footer .btn{
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 8px 15px;
+  font-weight: 400;
+  border: 2px solid #0e1726;
+}
+.modal-footer .btn-danger {
+  color: #e0e6ed;
+  background-color: transparent;
+  border-color: 2px solid #0e1726;
+  transition: all linear .3s;
+}
+.modal-footer .btn-danger:hover{
+  color: #e0e6ed;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/* ===============================================================================================
+                                          Card Part Css
+================================================================================================== */
+.card-common{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.14),
+              0 1px 18px 0 rgba(0,0,0,.12),
+              0 3px 5px -1px rgba(0,0,0,.2);
+  background: #0e1726;  
+  border-radius: 8px;          
+  transition: all .4s;            
+}
+.card-common:hover{
+  transform: translateY(-1px);
+}
+.card-common h5{
+  color: #e0e6ed;
+  font-weight: 500;
+  font-size: 22px;
+}
+.card-common h3{
+  color: #e0e6ed;
+  font-weight: 400;
+  font-size: 18px;
+}
+.card-common span{
+  color: #888ea8;
+}
+.card-common .card-footer i{
+  color: #888ea8;
+}
+.one{
+  background-color: #e2a03f;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fafafa;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.two{
+  background-color: #5c1ac3;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fafafa;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.three{
+  background-color: #e7515a;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fafafa;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.four{
+  background-color: #1b55e2;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fafafa;
+  font-size: 22px;
+  border-radius: 50%;
+}
+.card-footer{
+  border-top: 1px solid #3b3f5c47;
+}
+
+/* ===============================================================================================
+                                               Table Part Css
+================================================================================================== */
+.table thead th {
+  border-bottom: none;
+  background: #191e3a;
+  color: #25d5e4;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.table-head-left{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.table-head-right{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.table td{
+  font-weight: 400;
+}
+.table-common .btn-info {
+  color: #009688;
+  background-color: transparent;
+  border-color: #009688;
+}
+.table-common .btn{
+  font-size: 12px;
+}
+.table-common .badge-success {
+  color: #8dbf42;
+  background-color: transparent;
+  border: 1px solid #8dbf42;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px 10px;
+}
+.table-common .badge-danger {
+  color: #e7515a;
+  background-color: transparent;
+  border: 1px solid #e7515a;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 7px 10px;
+}
+.table td, .table th {
+  border-top: none;
+  vertical-align: 0;
+  color: #888ea8;
+}
+.table-common .table tr{
+  transition: all .4s;
+}
+.table-common .table tr:hover td{
+  transform: translateY(-1px);
+  color: #bfc9d4;
+  cursor: pointer;
+}
+.table-common .table tr:hover .table-head-hover{
+  color: #bfc9d4;
+}
+.table-common{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.14),
+              0 1px 18px 0 rgba(0,0,0,.12),
+              0 3px 5px -1px rgba(0,0,0,.2);
+  background: #0e1726;  
+  border-radius: 8px;
+  padding: 18px;          
+}
+.table-common h3{
+  color: #e0e6ed;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.page-item:last-child .page-link {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.page-link{
+  color: #506690;
+  background-color: transparent;
+  border: 1px solid #3b3f5c47;
+  transition: all linear .3s;
+}
+.page-item.active .page-link {
+  color: #e0e6ed;
+  background-color: #3b3f5c;
+  border-color: #3b3f5c;
+}
+.page-link:focus {
+  box-shadow: none;
+}
+.page-link:hover {
+  color: #e0e6ed;
+  background-color: #009688;
+  border-color: #009688;
+}
+
+/* ============================================================================================
+                                        Progress Bar / Task List Part Css
+=============================================================================================== */
+.progressBar{
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,.14),
+              0 1px 18px 0 rgba(0,0,0,.12),
+              0 3px 5px -1px rgba(0,0,0,.2);
+  background: #0e1726;  
+  border-radius: 8px;
+}
+.progress{
+  background-color: #191e3a;
+  border-radius: 16px;
+}
+.bg-warning{
+  background-color: #1b55e2;
+  background-image: linear-gradient(to right, #7579ff 0%, #b224ef 100%);
+  border-radius: 16px;
+}
+.bg-success{
+  background-color: #1b55e2;
+  background-image: linear-gradient(to right, #3cba92 0%, #0ba360 100%);
+  border-radius: 16px;
+}
+.bg-danger{
+  background-color: #1b55e2;
+  background-image: linear-gradient(to right, #f09819 0%, #ff5858 100%);
+  border-radius: 16px;
+}
+.bg-info{
+  background: rgb(94,221,206);
+  background: linear-gradient(90deg, rgba(94,221,206,1) 0%, rgba(53,232,227,1) 35%, rgba(25,176,208,1) 100%);
+  border-radius: 16px;
+}
+.progressBar h4{
+  color: #e0e6ed;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.progressBar h6{
+  color: #888ea8;
+}
+
+
+
+
+
 @media(max-width: 768px){
   .sidebar{
     position: static;
